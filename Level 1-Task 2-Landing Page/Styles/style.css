@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: clip;
+}
+
+/* <!-- Banner Section --> */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-size: 0.8rem;
+  padding: 0.2rem 5rem;
+
+  background: linear-gradient(
+    to right,
+    rgba(252, 214, 255),
+    rgba(41, 216, 255),
+    rgba(255, 253, 128),
+    rgba(248, 154, 191),
+    rgba(252, 214, 255)
+  );
+}
+.banner_icons {
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.banner_button button {
+  padding: 0.5rem 1rem;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 0.5rem;
+  }
+  .banner_icons {
+    display: none;
+  }
+}
+
+/* <!-- Navbar Section --> */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 5rem;
+
+  font-size: 0.8rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  max-width: 2rem;
+}
+.navbar_list {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_list li {
+  text-decoration: none;
+
+  cursor: pointer;
+}
+.navbar li a {
+  color: black;
+}
+.navbar li a:hover {
+  text-decoration: underline;
+}
+.buy_now {
+  background-color: orange;
+  padding: 0.7rem;
+  font-weight: bold;
+}
+.navbar_search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 1rem;
+
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+/* <!-- Hero Section --> */
+.hero {
+  background: rgb(0, 0, 0, 0.5) url(/Images/SASE-IG-Banner-Cropped-Image-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: darken;
+}
+.hero_content {
+  padding: 5rem 5rem;
+  color: white;
+  width: 60%;
+}
+.hero_content h1 {
+  font-size: 3rem;
+}
+.hero_content p {
+  font-size: 1.1rem;
+}
+.hero_button {
+  margin-top: 2rem;
+}
+.hero_button_read {
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(252, 214, 255),
+    rgba(41, 216, 255),
+    rgba(255, 253, 128),
+    rgba(248, 154, 191),
+    rgba(252, 214, 255)
+  );
+
+  color: white;
+  font-weight: bold;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
+.hero_button_request {
+  padding: 0.5rem 2rem;
+  border: 2px solid white;
+  background: transparent;
+
+  color: white;
+  font-weight: bold;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .hero_content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425) {
+  .hero_button button {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+}
+
+/* <!-- More Hero Section --> */
+.more_hero {
+  background: linear-gradient(
+    to right,
+    rgba(252, 214, 255),
+    rgba(41, 216, 255),
+    rgba(255, 253, 128),
+    rgba(248, 154, 191),
+    rgba(252, 214, 255)
+  );
+}
+.more_hero_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 5rem 5rem;
+}
+.more_hero_content > * {
+  flex: 1;
+}
+
+.more_hero_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.more_hero_box i {
+  font-size: 2rem;
+  color: white;
+}
+.more_hero_box h2 {
+  text-align: center;
+}
+.more_hero_content p {
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .more_hero_content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* <!-- About Section --> */
+
+.about {
+  padding: 5rem;
+  justify-content: space-between;
+  display: flex;
+}
+.about_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.about_box > * {
+  flex: 1;
+}
+.about_box_content img {
+  max-width: 30rem;
+}
+.about_image {
+  width: 100%;
+}
+.about_box_content h1 {
+  font-size: 4rem;
+  border-bottom: 0.3rem solid pink;
+}
+.about_box_content h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.about_box_content p {
+  font-size: 1.1rem;
+}
+.about_button button {
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(252, 214, 255),
+    rgba(41, 216, 255),
+    rgba(255, 253, 128),
+    rgba(248, 154, 191),
+    rgba(252, 214, 255)
+  );
+
+  color: black;
+  font-weight: bold;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .about_box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* <!-- Services Section --> */
+.services {
+  padding: 5rem;
+}
+.services h1 {
+  font-size: 4rem;
+  border-bottom: 0.3rem solid pink;
+  margin-bottom: 2rem;
+}
+.service_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.service_content > * {
+  flex: 1;
+}
+.service_box {
+  position: relative;
+}
+.service_box_image img {
+  max-width: 25rem;
+}
+.service_img {
+  width: 100%;
+}
+.service_box_h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+
+  color: white;
+  background-color: gray;
+  border-radius: 1.62rem;
+  padding: 0.5rem 0.3rem;
+}
+.service_box_h i {
+  color: black;
+  background: linear-gradient(
+    to right,
+    rgba(252, 214, 255),
+    rgba(41, 216, 255),
+    rgba(255, 253, 128),
+    rgba(248, 154, 191),
+    rgba(252, 214, 255)
+  );
+  padding: 0.5rem;
+  border-radius: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .service_content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .service_box_h {
+    right: 25%;
+  }
+}
+
+/* <!-- Footer Section --> */
+
+.footer_content p {
+  text-align: center;
+  padding: 1rem;
+}
